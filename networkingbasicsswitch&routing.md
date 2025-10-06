@@ -1,3 +1,5 @@
+# DAY 01
+
 what is switch and routing ? how systems communicate each other
 
 default gateway ,DNS configuration on linux
@@ -11,15 +13,9 @@ default gateway ,DNS configuration on linux
 - If **`ip_forward = 0`** → Linux will NOT forward packets (default).
 - If **`ip_forward = 1`** → Linux will forward packets → your Linux system acts like a **router**.
 
-Edit `/etc/sysctl.conf` and add:
-
-```
-net.ipv4.ip_forward=1
-
-```
-
+Edit `/etc/sysctl.conf` and add:```
+net.ipv4.ip_forward=1```
 Apply changes:
-
 ```bash
 sudo sysctl -p
 
